@@ -1,0 +1,59 @@
+
+p {
+  color: blue;
+}
+
+header {
+  text-align: center;
+}
+
+header {
+  font-size: 48px;
+}
+body{
+  background-image: url("images/acai_bowl.png");
+  background-size: cover;
+}
+
+.button{
+  background-image: url("images/blueberry1.png");
+  width: 145px;
+  height: 145px;
+  opacity: .5;
+
+}
+.button:hover{
+  background-image: url("images/blueberry1.png");
+  width: 145px;
+  height: 145px;
+  cursor: -webkit-grab;
+  opacity: 1;
+}
+h1 {
+
+  font-size: 250%;
+  font-family: cursive;
+
+}
+h3 {
+  text-align: center;
+  font-size: 200%;
+}
+
+img {
+   max-width: 100%;
+  height: auto;
+}
+p {
+font-style: italic;
+
+}
+a:hover {
+  color: blueviolet;
+  text-decoration: underline;
+  
+}
+a{
+  text-decoration: none;
+  color: black;
+}
