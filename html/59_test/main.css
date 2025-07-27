@@ -1,17 +1,17 @@
 /* The navigation bar */
 ul {
+  display: flex;
   flex-direction: row;
   overflow: hidden;
   background-color: black;
   position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  top: 0;  /*Position the navbar at the top of the page */
   width: 100%; /* Full width */
 }
 
 /* Links inside the navbar */
 ul a {
   float: left;
-
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -56,6 +56,8 @@ body {
         flex-direction: column;
         font-family: "Helvetica", "Arial", sans-serif;
       }
+      @media screen and (min-width: 600px) {
+
 .container {
         display: grid; /* Makes the container a grid container */
         grid-template-columns: 1fr 1fr 1fr; /* Creates three equal-width columns */
@@ -63,14 +65,14 @@ body {
         gap: 20px; /* Adds space between grid items */
         
 
-}
-.item{
+}.item{
   text-align: center;
   border-right: 1px solid black;
 }
 div p{
   text-align: justify;
 }
+      }
 #signup{
   background-color: gainsboro;
   text-align: center;
