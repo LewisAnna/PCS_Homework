@@ -1,3 +1,4 @@
 - There are vertical lines BETWEEN the products
 - Form is posted (to non existent page) when submitted.
 - table is centered
+text is blocked by footer, nav not at the top
