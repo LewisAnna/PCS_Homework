@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESTUFF</title>
     <link rel="stylesheet" href="main.css"> 
-    <ul>
+</head>
+<body> 
+  <nav> 
+  <ul>
         <li><a href="#products">Products</a></li>
         <li><a href="#signup">Sign Up</a></li>
         <li><a href="#financials">Financials</a></li>  
         <li><a href="#about">About Us</a></li>
     </ul>
-    <section id="pgheader">
-      <header>ESTUFF</header>
-      <a>   </a>
-      <a>   </a>
-    <sub>A <span class="italic-words">PCS</span> company</sub>
-  </section>
+  </nav> 
+  <div class="maincontent">
+   <header id="pgheader">
+    <h1>ESTUFF</h1>
+    <h2>A <span class="italic-words">PCS</span> company</h2> 
+   </header>
     
-</head>
-<body>
 <section id="products">
   <h2>Products</h2>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quidem veritatis vitae blanditiis rerum magni facere deleniti, numquam officiis laudantium!</p>
@@ -32,7 +33,8 @@
 
   <div class ="item">
     <h1>Choirs</h1>
-    <video src="media/El_Hanaar_Hazeh.mp4" alt="music video" controls/>
+    <video controls poster="images/shira.png">
+    <source src="media/El_Hanaar_Hazeh.mp4" alt="music video" ></video>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit optio possimus magnam unde voluptates illo fugit similique quibusdam, maiores asperiores, corrupti illum nisi amet, in quia. Dolorem totam labore illo, asperiores tenetur ut placeat a omnis possimus quo laudantium dolores.</p>
   </div>
     <div class="item">
@@ -47,7 +49,7 @@
   <h2>Sign Me Up!</h2>
     <form method="post" action="foo">
       <label>
-        Name:
+        Name: 
         <input name="first" minlength="3" maxlength="10" value="Your Name" required/>
       </label>
           <label>
@@ -66,6 +68,7 @@
   <h2>Financials</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est eum numquam nobis voluptate id sint facilis esse distinctio recusandae non error quod suscipit et, laboriosam accusamus! Labore eius ad sint!</p>
   <h3>Profits- By Quarter</h3>
+  <div class="tablecontainer">
   <table>
   <tr>
     <th>Year</th>
@@ -112,6 +115,7 @@
     <td id="total">$6578349.71</td>
   </tfoot>
 </table>
+</div>
 </section>
 
 <section id="about">
@@ -121,6 +125,7 @@
 
 
 </body>
+</div>
 <footer>
   <p> &copy; PCS 2019</p>
 </footer>

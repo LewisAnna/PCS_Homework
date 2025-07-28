@@ -1,5 +1,18 @@
-/* The navigation bar */
-ul {
+
+body {
+
+        display: flex;
+        flex-direction: column;
+        font-family: "Helvetica", "Arial", sans-serif;
+
+      }
+.maincontent{
+  margin-right: 8%;
+  margin-left: 8%;
+
+}
+
+      ul {
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -24,6 +37,7 @@ ul a:hover {
   color: red;
 }
 
+
 /* The footer */
 footer {
 
@@ -41,38 +55,61 @@ footer p{
   font-weight: bold;
   font-size: larger;
   text-align: center;
- 
-  padding: 10%
+  padding: 5%;
+  margin: 5%;
 }
 .italic-words {
         font-style: italic;
     }
-#pgheader header{
+#pgheader h1{
   text-transform: uppercase;
 }
-body {
-        display: flex;
-        margin: 10%;
-        flex-direction: column;
-        font-family: "Helvetica", "Arial", sans-serif;
-      }
-      @media screen and (min-width: 600px) {
+
+
+@media screen and (min-width: 800px) {
 
 .container {
         display: grid; /* Makes the container a grid container */
-        grid-template-columns: 1fr 1fr 1fr; /* Creates three equal-width columns */
-        /* Other options: specify fixed widths like 200px 1fr 200px */
-        gap: 20px; /* Adds space between grid items */
+        grid-template-columns: 1fr 1fr 1fr ; /* Creates three equal-width columns */
+
         
 
 }.item{
   text-align: center;
-  border-right: 1px solid black;
+ 
+  margin-right: 20px;
+  margin-left: 20px;
+}
+div p{
+  text-align: justify;
+}
+video{
+   width: 300px;
+        height: 200px;
+}
+img{
+     width: 300px;
+        height: 200px;
+}
+      }
+@media screen and (width < 800px) {
+
+.item{
+  text-align: center;
+
 }
 div p{
   text-align: justify;
 }
       }
+@media screen and (width < 1000px) {
+  label{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  }
+}
 #signup{
   background-color: gainsboro;
   text-align: center;
@@ -86,8 +123,10 @@ input{
 h3{
   text-align: center;
 }
-table{
+.tablecontainer{
   margin: 0 auto;
+  overflow-x: auto;
+ 
 }
 th {
   text-align: center;
