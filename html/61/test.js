@@ -9,3 +9,12 @@ convert2C(50);
 convert2F(21);
 convert2F(10);
 convert2C(105);
+
+function multiply(x, y){
+    return x * y;
+}
+
+const theMultiplier = getMultiplier();
+console.log(theMultiplier(5, 3));
+
+console.log(theMultiplier()(1, 45));
