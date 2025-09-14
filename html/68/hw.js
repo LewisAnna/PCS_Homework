@@ -49,6 +49,12 @@ const pcsMessageBox = (function () {
 
     const okButton = document.createElement('button');
     okButton.innerText = 'ok';
+    const yesButton = document.createElement('button');
+    yesButton.innerText = 'yes';
+    const noButton = document.createElement('button');
+    noButton.innerText = 'no';
+    const maybeButton = document.createElement('button');
+    maybeButton.innerText = 'maybe';
 
     okButton.addEventListener('click', () => {
       //div.style.display = 'none';
@@ -60,6 +66,40 @@ const pcsMessageBox = (function () {
     });
 
     buttonDiv.appendChild(okButton);
+
+        yesButton.addEventListener('click', () => {
+      //div.style.display = 'none';
+      //document.body.removeChild(div);
+      div.remove();
+      if (modal) {
+        modalDiv.style.display = 'none';
+      }
+    });
+
+    buttonDiv.appendChild(yesButton);
+
+        maybeButton.addEventListener('click', () => {
+      //div.style.display = 'none';
+      //document.body.removeChild(div);
+      div.remove();
+      if (modal) {
+        modalDiv.style.display = 'none';
+      }
+    });
+
+    buttonDiv.appendChild(maybeButton);
+
+        noButton.addEventListener('click', () => {
+      //div.style.display = 'none';
+      //document.body.removeChild(div);
+      div.remove();
+      if (modal) {
+        modalDiv.style.display = 'none';
+      }
+    });
+
+    buttonDiv.appendChild(noButton);
+
 
     div.appendChild(msgDiv);
     div.appendChild(buttonDiv);

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="msg">
+    <input id="modal" type="checkbox">modal
+    <script src="hw.js"></script>
+    <script>
+    pcsMessageBox('Is this enough homework?', ['Yes', 'No', 'Maybe'],
+    usersChoice => console.log('You picked ' + usersChoice));
+
+     /* pcsMessageBox('This is a test!!!');
+
+      show.addEventListener('click', () => {
+          pcsMessageBox(msg.value, modal.checked);
+      });*/
+    </script>
+  </body>
+</html>
