@@ -18,4 +18,4 @@ createCounter : () => {
 
 const aCounter = app.createCounter();
 aCounter.increment();
-aCounter.getCount()
+aCounter.getCount();

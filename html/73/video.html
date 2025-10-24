@@ -1,0 +1,58 @@
+// unfinished code!!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      #content {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .has-video {
+        display: none;
+      }
+
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Videos</h1>
+    </header>
+    <hr />
+    <select id="Videos">
+      <option hidden>select a video</option>
+    </select>
+
+    <div class="no-video">
+      <h3>Select a video</h3>
+      <h3 class="error"></h3>
+    </div>
+
+    <div class="has-video">
+      <h2 id="name"></h2>
+      <img id="picture" />
+
+      <h5>Content</h5>
+      <ul id="content"></ul>
+    </div> 
+
+   <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script> 
+    <script src="video.js"></script>
+    /* $('#theVideo')[0].play() */
+  </body>
+</html>

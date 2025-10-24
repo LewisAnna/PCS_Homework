@@ -1,6 +1,6 @@
-const myArray = [2,4,6];
 
-const ogArray = console.log(myArray);
+//part 1
+const myArray = [2,4,6];
 
 const doubledArray = [];
 
