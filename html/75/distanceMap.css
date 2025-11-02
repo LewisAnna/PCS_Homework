@@ -1,0 +1,9 @@
+ #map {
+         height: 400px;
+        width: 100%;
+    }
+#panel {
+        padding: 10px;
+        background-color: #f8f8f8;
+        border-bottom: 1px solid #ddd;
+    }
