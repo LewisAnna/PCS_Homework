@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      #theCanvas {
+        display: block;
+      }
+
+        .ballColor {
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000; /* Default color (red) */
+            border-radius: 50%;
+            margin-top: 20px;
+            transition: background-color 0.3s ease; /* Smooth color transition */
+        }
+    
+    </style>
+  </head>
+  <body>
+    <label for="color-picker">Select a color for the ball:</label>
+    <input type="color" id="color-picker" value="#ff0000"> <!-- Default value -->
+    <div class="ball" id="ball"></div>
+    <canvas id="theCanvas"></canvas>
+    <script src="hw.js"></script>
+  </body>
+</html>
