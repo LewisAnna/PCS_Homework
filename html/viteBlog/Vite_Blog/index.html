@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Blog Viewer</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <h1>Recent Blogs</h1>
+    
+    <div id="blog-list-container">
+      <div id="blog-list">
+        <!-- Blog list items will be dynamically inserted here -->
+      </div>
+    </div>
+
+    <div id="blog-detail-container" style="display: none;">
+      <button id="back-button">Back to List</button>
+      <button id="show-comment-button">Show Comments</button>
+      <div id="detail-list"></div>
+        <!-- Blog content will be inserted here -->
+      </div>
+    </div>
+    
+    <div id="blog-comment-container" style="display: none;">
+      <button id="back-button2">Back to List</button>
+      <button id="hide-comment-button">Hide Comments</button>
+      <div id="comment-list"></div>
+      <h6 id="blog-name"></h6>
+      <h6 id="blog-email"></h6>
+      <div id="blog-comments">
+        <!-- Blog content will be inserted here -->
+            </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
