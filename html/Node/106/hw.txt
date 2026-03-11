@@ -1,0 +1,41 @@
+(base)
+chana@Lewis MINGW64 ~/OneDrive/Desktop
+$ mongosh
+Current Mongosh Log ID: 69b0b80c4e26686f2446b798
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.5
+Using MongoDB:          7.0.9
+Using Mongosh:          2.2.5
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2026-03-05T19:31:52.208-05:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> \use myNewDatabase
+Uncaught:
+SyntaxError: Bad character escape sequence. (1:2)
+
+> 1 | \use myNewDatabase
+    |   ^
+  2 |
+
+test> use myNewDatabase
+switched to db myNewDatabase
+myNewDatabase> db.myCollection.insertOne({name: "Sample Document", value: 1})
+{
+  acknowledged: true,
+  insertedId: ObjectId('69b0b9084e26686f2446b799')
+}
+myNewDatabase> show dbs
+admin                40.00 KiB
+autosaurus          152.00 KiB
+classDB             120.00 KiB
+config               72.00 KiB
+epa                   1.47 MiB
+local               104.00 KiB
+met                   1.04 MiB
+myNewDatabase         8.00 KiB
+petsitly_marketing  104.00 KiB
+uk_food              15.92 MiB
